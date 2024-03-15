@@ -1,0 +1,34 @@
+{
+	"name": "rawcontaniner",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "raw-container"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"DEPARTMENT_ID": {
+					"type": "integer"
+				},
+				"DEPARTMENT_NAME": {
+					"type": "string"
+				},
+				"MANAGER_ID": {
+					"type": "integer"
+				},
+				"LOCATION_ID": {
+					"type": "integer"
+				}
+			}
+		}
+	}
+}
